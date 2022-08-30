@@ -2,9 +2,15 @@
 <html>
 
 <head>
+    {%if title %}
     <title>
-        Home
+        Django Blog - {{ title }}
     </title>
+    {%else %}
+    <title>
+        Django Blog
+    </title>
+    {%endif %}
 </head>
 
 <body>
@@ -15,7 +21,7 @@
     <p>
         By {{ post.author }} on {{ post.date_posted }}
     <p>
-        {{ post.body }}
+        {{ post.content }}
     </p>
     {% endfor %}
 

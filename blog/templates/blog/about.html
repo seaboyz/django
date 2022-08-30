@@ -3,7 +3,11 @@
 
 <head>
     <title>
-        About
+        {% if title %}
+        {{ title }}
+        {% else %}
+        Django About
+        {% endif %}
     </title>
 </head>
 
