@@ -1,23 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>
-        {% if title %}
-        {{ title }}
-        {% else %}
-        Django About
-        {% endif %}
-    </title>
-</head>
-
-<body>
-    <h1>
-        About
-    </h1>
-    <p>
-        This is the about page.
-    </p>
-</body>
-
-</html>
+{% extends "blog/base.html" %}
+{% block content %}
+<h1>About Page</h1>
+{% endblock %}
