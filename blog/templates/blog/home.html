@@ -8,12 +8,17 @@
 </head>
 
 <body>
+    {% for post in posts %}
     <h1>
-        Home
+        {{ post.title }}
     </h1>
     <p>
-        This is the home page.
+        By {{ post.author }} on {{ post.date_posted }}
+    <p>
+        {{ post.body }}
     </p>
+    {% endfor %}
+
 </body>
 
 </html>
